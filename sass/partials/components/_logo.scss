@@ -14,6 +14,8 @@
         // fill: $dark-primary-color;
     }
 }
+.logo {
+    @include paddinghack(100%, 600, 388, 'svg'); // use your logo dimensions here
 
 .gridster{
     font-size:104.73602295px;
