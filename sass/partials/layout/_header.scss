@@ -13,10 +13,9 @@
 
     .row{
         position: relative;
-        width: 100%;
+        width: 80%;
         top: 0;
         left: 0;
-        transition: .3s all ease-in-out;
         padding: 10px 10px;
         box-sizing: border-box;
         overflow: hidden;
@@ -33,7 +32,6 @@
             font-size: 2em;
             font-weight: bold;
             text-transform: uppercase;
-            transition: .3s all ease-in-out;
         }
     }
 }
