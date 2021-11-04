@@ -10,12 +10,8 @@
         stroke-linejoin:miter;
         stroke-miterlimit:4;
     }
-    .rectangle{
-        // fill: $dark-primary-color;
-    }
+
 }
-.logo {
-    @include paddinghack(100%, 1200, 776, 'svg'); // use your logo dimensions here
 
 .gridster{
     font-size:104.73602295px;
