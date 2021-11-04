@@ -48,16 +48,7 @@
         }
 
         .logo {
-            @include paddinghack(100%, 600, 388, "svg"); // use your logo dimensions here
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%) scale(2);
-            transition: .3s all ease-in-out;
-            height: 100px;
-            display: block;
-            max-width: 500px;
-            width: 50%;
+            width: 70%;
         }
 
         .title{
