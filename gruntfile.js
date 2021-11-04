@@ -104,10 +104,6 @@ module.exports = function (grunt) {
                     'css/main.css': 'sass/main.scss',
                     'css/grid.css': 'sass/grid.scss',
                     'css/classic.css': 'sass/classic.scss',
-                    // you may want to remove these for your site
-                    'css/main_brown.css': 'sass/main_brown.scss',
-                    'css/main_green.css': 'sass/main_green.scss',
-                    'css/main_teal.css': 'sass/main_teal.scss'
                 }
             }
         },
