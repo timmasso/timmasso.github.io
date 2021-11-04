@@ -17,12 +17,15 @@
         top: 0;
         left: 0;
         padding: 10px 10px;
-        box-sizing: border-box;
         overflow: hidden;
-        text-align: center;
-        left: 50%;
-        transform: translateX(-50%);
-
+        
+        .headerimage{
+            position: relative;
+            width: 80%;
+            text-align: center;
+            left: 50%;
+            transform: translateX(-50%);
+        }
 
         .title{
             position: absolute;
