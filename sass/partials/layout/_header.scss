@@ -11,28 +11,6 @@
     background: $head-bg;
     z-index: 20;
 
-    // logo media queries
-    @media screen and (min-width: $from-full-to-noslogan){
-        .ts-no-slogan,
-        .ts-icon{
-            display: none;
-        }
-    }
-
-    @media screen and (max-width: $from-full-to-noslogan - 1) and (min-width: $from-noslogan-to-icon + 1){
-        .ts-full,
-        .ts-icon{
-            display: none;
-        }
-    }
-
-    @media screen and (max-width: $from-noslogan-to-icon){
-        .ts-full,
-        .ts-no-slogan{
-            display: none;
-        }
-    }
-
     .row{
         position: relative;
         width: 100%;
@@ -42,10 +20,6 @@
         padding: 700px 10px; // adjust to change header height
         box-sizing: border-box;
         overflow: hidden;
-
-        @media screen and (max-width: $from-noslogan-to-icon){
-            padding: 120px 10px;
-        }
 
         .title{
             position: absolute;
