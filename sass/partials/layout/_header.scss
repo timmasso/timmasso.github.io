@@ -17,17 +17,20 @@
         top: 0;
         left: 0;
         transition: .3s all ease-in-out;
-        padding: 700px 10px; // adjust to change header height
+        padding: 10px 10px;
         box-sizing: border-box;
         overflow: hidden;
         text-align: center;
+        left: 50%;
+        transform: translateX(-50%);
+
 
         .title{
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%) scale(0);
-            font-size: 0em;
+            font-size: 2em;
             font-weight: bold;
             text-transform: uppercase;
             transition: .3s all ease-in-out;
