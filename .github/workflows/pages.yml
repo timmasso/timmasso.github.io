@@ -1,0 +1,30 @@
+name: Deploy Jekyll site to GitHub Pages
+
+on:
+  push:
+    branches: ["main"]  # or your default branch
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2' # Specify your Ruby version
+
+      - name: Install dependencies
+        run: bundle install
+
+      - name: Build Jekyll site
+        run: bundle exec jekyll build
+
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4
+        with:
+          # 'gh-pages' branch is typically used, but modern workflows use the 'github-pages' deployment
+          token: ${{ secrets.GITHUB_TOKEN }}
+          # You can specify build output directory here if needed
