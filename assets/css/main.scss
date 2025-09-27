@@ -1,58 +1,60 @@
 @use "no-style-please" as *;
 
-/* Protect site from browser dark mode/inversion */
+/* Force light theme on all devices - prevents dark mode interference */
+/* This ensures the site always displays in light colors while preserving custom styles */
+
+/* Force light theme at root level */
+:root {
+  color-scheme: light !important;
+}
+
+/* Ensure body has light colors */
+body {
+  background-color: white !important;
+  color: #333 !important;
+}
+
+/* Override dark mode media queries */
 @media (prefers-color-scheme: dark) {
-  /* Reset all backgrounds to ensure they stay as intended */
+  /* Override browser dark mode */
+  :root {
+    color-scheme: light !important;
+  }
+  
+  /* Force light backgrounds and text */
   body, html {
-    background-color: initial !important;
-    color: initial !important;
+    background-color: white !important;
+    color: #333 !important;
   }
   
-  /* Protect all backgrounds */
-  *, *::before, *::after {
-    background-color: initial !important;
-    background-image: initial !important;
-  }
-  
-  /* Protect headings */
-  h1, h2, h3, h4, h5, h6 {
-    color: initial !important;
-    background-color: initial !important;
-  }
-  
-  /* Protect paragraphs */
-  p {
-    color: initial !important;
-    background-color: initial !important;
-  }
-  
-  /* Protect links */
-  a, a:link, a:visited, a:hover, a:active {
-    color: initial !important;
-    background-color: initial !important;
-  }
-  
-  /* Protect spans and divs */
-  span, div {
-    color: initial !important;
-    background-color: initial !important;
-  }
-  
-  /* Protect all text elements */
-  strong, em, b, i, u, small, mark, del, ins, sub, sup {
-    color: initial !important;
-    background-color: initial !important;
-  }
-  
-  /* Protect images from inversion */
+  /* Prevent images from being inverted */
   img {
     filter: none !important;
   }
   
-  /* Protect all colored text across the site */
-  [style*="color"], [style*="background"] {
-    color: initial !important;
-    background-color: initial !important;
-    background-image: initial !important;
+  /* Keep original heading colors unless specifically set */
+  h1, h2, h3, h4, h5, h6 {
+    color: inherit;
+  }
+  
+  /* Preserve link colors but ensure readability */
+  a {
+    color: inherit;
+  }
+  
+  /* Reset any dark backgrounds that might interfere */
+  * {
+    background-color: inherit;
+    color: inherit;
+  }
+  
+  /* Specifically prevent dark backgrounds on main content areas */
+  .site-header,
+  .site-nav,
+  .site-footer,
+  .page-content,
+  .post-content,
+  .wrapper {
+    background-color: transparent !important;
   }
 }
