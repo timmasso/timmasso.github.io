@@ -1,1 +1,58 @@
 @use "no-style-please" as *;
+
+/* Protect site from browser dark mode/inversion */
+@media (prefers-color-scheme: dark) {
+  /* Reset all backgrounds to ensure they stay as intended */
+  body, html {
+    background-color: initial !important;
+    color: initial !important;
+  }
+  
+  /* Protect all backgrounds */
+  *, *::before, *::after {
+    background-color: initial !important;
+    background-image: initial !important;
+  }
+  
+  /* Protect headings */
+  h1, h2, h3, h4, h5, h6 {
+    color: initial !important;
+    background-color: initial !important;
+  }
+  
+  /* Protect paragraphs */
+  p {
+    color: initial !important;
+    background-color: initial !important;
+  }
+  
+  /* Protect links */
+  a, a:link, a:visited, a:hover, a:active {
+    color: initial !important;
+    background-color: initial !important;
+  }
+  
+  /* Protect spans and divs */
+  span, div {
+    color: initial !important;
+    background-color: initial !important;
+  }
+  
+  /* Protect all text elements */
+  strong, em, b, i, u, small, mark, del, ins, sub, sup {
+    color: initial !important;
+    background-color: initial !important;
+  }
+  
+  /* Protect images from inversion */
+  img {
+    filter: none !important;
+  }
+  
+  /* Protect all colored text across the site */
+  [style*="color"], [style*="background"] {
+    color: initial !important;
+    background-color: initial !important;
+    background-image: initial !important;
+  }
+}
