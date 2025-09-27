@@ -1,9 +1,0 @@
-:root { color-scheme: only light; }
-@media (prefers-color-scheme: dark) {
-  * { filter: none !important; }
-  img, [style*="background-image"], .bg, .banner, .section, body {
-    filter: none !important;
-    background-blend-mode: normal !important;
-    mix-blend-mode: normal !important;
-  }
-}
