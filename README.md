@@ -4,14 +4,16 @@ Personal website and portfolio for Timothy Masso.
 
 ## Repository Structure
 
-This Jekyll site is organized with the following clean folder structure:
+This Jekyll site is organized with the following folder structure:
 
 ### Collections
 - `_aboutme/` - About me content collection
 - `_dataprojects/` - Data science and analytics projects
 - `_performances/` - Performance and music content
 - `_typewriters/` - Typewriter collection content
-- `_posts/` - Blog posts (moved from projects/_posts for standard Jekyll structure)
+
+### Projects
+- `projects/_posts/` - Blog posts in their original location
 
 ### Jekyll Directories
 - `_data/` - Site data files
@@ -27,8 +29,10 @@ This Jekyll site is organized with the following clean folder structure:
 ### Configuration & Pages
 - `_config.yml` - Jekyll configuration
 - `index.markdown` - Homepage
+- `indexgood.txt` - Index template file (restored)
 - `about.markdown` - About page
 - `new_school.html` - New School related content
+- `refrenacepostmarkdown.txt` - Reference post markdown template (restored)
 - `404.html` - Error page
 - `Gemfile` - Ruby dependencies
 
@@ -37,12 +41,15 @@ This Jekyll site is organized with the following clean folder structure:
 - `.vscode/` - VS Code settings
 - `.gitignore` - Git ignore rules
 
-## Recent Changes
+## Recent Restoration
 
-- ✅ Removed unnecessary files (`indexgood.txt`, `refrenacepostmarkdown.txt`)
-- ✅ Moved blog posts from `projects/_posts/` to root `_posts/` directory for standard Jekyll structure
-- ✅ Cleaned up repository organization
-- ✅ Updated documentation
+✅ **Repository structure restored to previous state:**
+- ✅ Restored `indexgood.txt` file to root directory
+- ✅ Restored `refrenacepostmarkdown.txt` file to root directory
+- ✅ Moved blog posts back from root `_posts/` to `projects/_posts/` directory
+- ✅ Maintained existing `about.markdown` and `new_school.html` in their locations
+- ✅ Preserved all asset organization and configuration files
+- ✅ Updated documentation to reflect restored structure
 
 ## Development
 
