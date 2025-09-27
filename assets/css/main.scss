@@ -1,19 +1,15 @@
 @use "no-style-please" as *;
-
 /* Force light theme on all devices - prevents dark mode interference */
 /* This ensures the site always displays in light colors while preserving custom styles */
-
 /* Force light theme at root level */
 :root {
   color-scheme: light !important;
 }
-
 /* Ensure body has light colors */
 body {
   background-color: white !important;
   color: #333 !important;
 }
-
 /* Override dark mode media queries */
 @media (prefers-color-scheme: dark) {
   /* Override browser dark mode */
@@ -57,4 +53,27 @@ body {
   .wrapper {
     background-color: transparent !important;
   }
+}
+
+html, body {
+  background: #fff;
+  color: #222;
+}
+
+@media (prefers-color-scheme: dark) {
+  html, body {
+    background: #fff !important;
+    color: #222 !important;
+  }
+  img, [style*="background-image"] {
+    filter: none !important;
+  }
+}
+
+h1, h2, h3, h4, h5, h6, p, span, div, li, a {
+  color: inherit;
+}
+
+:root {
+  color-scheme: only light;
 }
