@@ -1,9 +1,7 @@
 # timmasso.github.io
-
 Personal website and portfolio for Timothy Masso.
 
 ## Repository Structure
-
 This Jekyll site is organized with the following folder structure:
 
 ### Collections
@@ -42,7 +40,6 @@ This Jekyll site is organized with the following folder structure:
 - `.gitignore` - Git ignore rules
 
 ## Recent Restoration
-
 ✅ **Repository structure restored to previous state:**
 - ✅ Restored `indexgood.txt` file to root directory
 - ✅ Restored `refrenacepostmarkdown.txt` file to root directory
@@ -52,16 +49,14 @@ This Jekyll site is organized with the following folder structure:
 - ✅ Updated documentation to reflect restored structure
 
 ## Development
-
 This is a Jekyll site. To run locally:
-
 ```bash
 bundle install
 bundle exec jekyll serve
 ```
-
-The site will be available at `http://localhost:4000`.
+The site will be available at http://localhost:4000.
 
 ## Deployment
-
 The site is automatically deployed to GitHub Pages via GitHub Actions when changes are pushed to the main branch.
+
+<!-- Rebuild trigger: 2025-09-26 20:27 EDT -->
