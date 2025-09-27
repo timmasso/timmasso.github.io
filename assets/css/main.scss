@@ -1,32 +1,14 @@
 @use "no-style-please" as *;
 
-/* Minimal light mode enforcement to prevent dark mode interference */
-/* This preserves custom backgrounds, colors, and layouts */
-
-:root {
-  color-scheme: only light;
-}
-
-/* Ensure consistent light theme across browsers */
-body {
-  background-color: white;
-  color: #333;
-}
-
-/* Override dark mode only when necessary */
 @media (prefers-color-scheme: dark) {
-  :root {
-    color-scheme: only light;
+  * { filter: none !important; }
+  img, [style*="background-image"], .bg, .banner, .section, body {
+    filter: none !important;
+    background-blend-mode: normal !important;
+    mix-blend-mode: normal !important;
   }
-  
-  /* Minimal overrides to maintain light theme */
-  body {
-    background-color: white;
-    color: #333;
-  }
-  
-  /* Prevent image inversion in dark mode */
-  img {
-    filter: none;
+  h1, h2, h3, h4, h5, h6, p, span, div, li, a {
+    color: inherit !important;
   }
 }
+:root { color-scheme: only light; }
