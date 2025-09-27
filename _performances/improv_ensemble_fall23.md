@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: Improv Ensemble Fall 2023
 category: "New School"
 year: 2023
