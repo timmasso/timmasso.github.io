@@ -120,7 +120,7 @@ layout: home
 body {
   color: white;
   font-family: monospace;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.4;
   margin: 0;
   min-height: 100%;
@@ -181,7 +181,7 @@ h1 {
 }
 
 .category {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
   list-style-type: disc;
   margin-top: 1em;
@@ -189,7 +189,7 @@ h1 {
 
 ul > .category:first-child {
   margin-top: 0;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 h2 + ul .category {
@@ -197,7 +197,7 @@ h2 + ul .category {
 }
 
 .year {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: normal;
   margin-left: 3em;
   list-style-type: circle;
